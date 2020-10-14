@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div0{
+            width: 1000px;
+            background: #000;
+            /* height: 200px; */
+            /* overflow: hidden; */
+        }
+        #div1{
+            background: #0000ff;
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        #div2{
+            background: #ff0000;
+            width: 300px;
+            height: 200px;
+            float: left;
+        }
+        .clearfix::after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div0" class="clearfix">
+        <div id="div1"></div>
+        <div id="div2"></div>
+    </div>
+</body>
+</html>
