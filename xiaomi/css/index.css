@@ -1,0 +1,127 @@
+#header{
+    background: #333;
+    height:40px; 
+}
+.nav{
+    background: #ff0000;
+}
+.nav-list{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.nav-list a {
+    color:#b0b0b0;
+    padding: 0 8px;
+    border-left: 1px  solid #424242;
+}
+.nav-list a:hover{
+    color:#fff;
+}
+.nav-list-first a {
+    padding-left: 0;
+    border: none;
+}
+.login{
+    float: right;
+}
+.cart{
+    float:left;
+    width:120px;
+    position: relative; 
+    top: 0;
+    left:0;
+    cursor: pointer;
+}
+.cart-num{
+    height: 40px;
+    line-height: 40px;
+    color: #B0B0B0;
+    background: #424242;
+    text-align: center;
+}
+.cart:hover .cart-list{
+    /* display: block; */
+    height: 100px;
+
+}
+
+.cart-list{
+    width: 320px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index:1;
+    background: #fff;
+    text-align: center;
+    line-height: 100px;
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    /* css3边框阴影  水平偏移 垂直偏移 模糊度 外延值 颜色*/
+    box-shadow:0px 1px 1px 1px rgba(0,0,0,0.3) ;
+}
+.icon-gangqin{
+    color:pink;
+    font-size: 6px;
+}
+.cart:hover .cart-num{
+    color:#ff6700;
+    background: #fff;
+}.menu{
+    height: 100px;
+}
+.logo-box{
+    float: left;
+    background: #ff6701;
+    margin-top: 22px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+}.menu-box{
+    float: left;
+    margin-left:175px;
+}
+.menu-list{
+    float: left;
+    line-height: 100px;
+}
+.menu-list:hover a{
+    color: #ff6701;
+}
+.menu-list a{
+    padding: 0 12px;
+    color:#333;
+    font-size: 16px;
+}
+.search-box{
+    float: right;
+     border:1px solid #e0e0e0;
+     width: 296px;
+     height: 50px;
+     margin-top: 22px;
+}
+.search-box input{
+    width: 242px;
+    height: 50px;
+    border: none;
+    outline: none;
+    text-indent:10px ;
+    float: left;
+}
+.search-box button{
+    width: 54px;
+    height: 50px;
+    border:none;
+    float: left;    
+    background: none;
+    border-left: 1px solid #e0e0e0;
+}
+.search-box .icon-leqi{
+    color:#616161;
+    font-weight:bold; 
+}
+.search-box:hover  .iconfont{
+    color:#ff6700
+} 

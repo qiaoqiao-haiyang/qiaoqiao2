@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        body {
+            font-size: 14px;
+            font-family: Helvetica, arial, "Hiragino Sans GB", "PingFang SC", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+        }
+        /* header */
+        .header .h-logo{
+            height: 98px;
+            width: 200px;
+            background-image: url(./image/mistore_logo.png);
+        }
+        /* content中间部分 */
+        .content{
+            height: 590px;
+            width: 100%;
+            background-image: url(./image/bg.jpg);
+            overflow: hidden;
+            background-position: top center;
+
+        }
+        .content .main-content{
+            height: 590px;
+            margin-top: 30px;
+
+        }
+        .content .longin-box{
+           height: 566px;
+           width: 410px;
+           background: white; 
+            margin-left: auto;
+            margin-right: 0;    
+        }
+        .content .longin-box .nav-tabs{
+            /* 上 左右 下 */
+            padding: 27px 0 24px;
+            text-align: center;
+            font-size: 24px;
+            color: #666;
+        }
+        .content .nav-tabs a {
+            color:#666
+        }
+        .content .nav-tabs a:hover{
+            color: #f56600;
+        }
+        .content .nav-tabs a.active{
+            color: #f56600;
+        }
+        .content .nav-tabs span{
+            width: 1px;
+            height: 24px;
+            margin: 0 35px 0 31px;
+            border:1px solid #e0e0e0    
+        }
+        .content .form-content{
+            width: 348px;
+            margin: 0 auto;
+        }
+        .content .form-content input{
+            border:none;
+            outline: none;
+        }
+        .content .form-content .inp-box{
+            width: 306px;
+            height: 22px;
+            padding: 13px 16px 13px 14px;
+            border:1px solid #e0e0e0;
+            margin-bottom: 14px
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="header wrapper">
+        <div class="h-logo"></div>
+    </div>
+    <!-- 中间部分 -->
+    <div class="content">
+        <div class="main-content wrapper">
+            <div class="longin-box">
+                <div class="nav-tabs">
+                    <a class="active" href="javascript:void(0);">账号登录</a>
+                    <span></span>
+                    <a href="javascript:void(0);">扫码登录</a>
+                </div>
+                <div class="form-content">
+                    <div class="inp-box">
+                        <input type="text" placeholder="邮箱/手机号码/小米ID">
+                    </div>
+                    <div class="inp-box">
+                        <input type="password" placeholder="密码">
+                    </div>
+                </div>
+                <div class="login-info"></div>
+                <div class="other-login"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+</div> 
+</body>
+</html>
