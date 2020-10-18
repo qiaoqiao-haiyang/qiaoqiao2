@@ -156,19 +156,147 @@
     position: relative;
 }
 
-.swiper .swiper-img,.swiper .swiper-nav {
+.swiper .swiper-img, .swiper .swiper-nav {
     height: 460px;
     position: absolute;
     top: 0;
     padding: 0;
 }
-.swiper .swiper-img{
+
+.swiper .swiper-img {
     width: 100%;
-    background-color: blue;
+    position: relative;
+}
+
+.swiper .swiper-img img {
+    width: 100%;
 }
 
 .swiper .swiper-nav {
     width: 234px;
-    background-color: red;
+    background-color: rgba(105, 101, 101, 0.6);
     z-index: 1;
+}
+
+.swiper .swiper-nav ul {
+    padding: 20px 0;
+}
+
+.swiper .swiper-nav li {
+    padding: 0 30px;
+    color: white;
+    font-size: 14px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.swiper .swiper-nav li:hover {
+    background-color: #ff6700;
+    cursor: pointer;
+}
+
+.swiper .swiper-nav i {
+    float: right;
+}
+
+.swiper .arr-left:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.swiper .arr-left:hover .iconfont {
+    color: #fff;
+}
+
+.swiper .arr-left {
+    height: 69px;
+    width: 41px;
+    color: #fff;
+    position: absolute;
+    left: 234px;
+    top: 50%;
+    margin-top: -35px;
+}
+
+.swiper .arr-left .iconfont {
+    font-size: 44px;
+    color: #616161;
+}
+
+/* hero-sub */
+
+.hero-sub {
+    margin-top: 14px;
+}
+
+.hero-sub .hs-left {
+    width: 234px;
+    height: 170px;
+    background-color: #5f5750;
+    float: left;
+    cursor: pointer;
+
+}
+
+.hero-sub .hs-left ul {
+    padding: 3px;
+}
+
+.hero-sub .hs-left li {
+    float: left;
+    width: 75px;
+    height: 82px;
+    padding: 18px 3px 0;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+}
+
+.hero-sub .hs-left img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 4px;
+}
+
+.hero-sub .hs-right {
+    width: 978px;
+    margin-left: 14px;
+    height: 170px;
+    float: left;
+}
+
+.hero-sub .hs-left li:after {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    content: "";
+    width: 1px;
+    height: 70px;
+    display: block;
+    background-color: #665e57;
+}
+.hero-sub .hs-left li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 1px;
+    top: -1px;
+    left: 6px;
+    background-color: #665e57;
+}
+.hero-sub .hs-right li{
+    float:left;
+}
+.hero-sub .hs-right li:first-child{
+    margin-left:0;
+}
+.hero-sub .hs-right img{
+    display: block;
+    width: 311px;
+    height: 170px;
+    display: block;
+    margin-left: 15px;
 }
