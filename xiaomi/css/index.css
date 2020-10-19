@@ -234,7 +234,6 @@
     background-color: #5f5750;
     float: left;
     cursor: pointer;
-
 }
 
 .hero-sub .hs-left ul {
@@ -277,6 +276,7 @@
     display: block;
     background-color: #665e57;
 }
+
 .hero-sub .hs-left li:before {
     content: "";
     display: block;
@@ -287,16 +287,144 @@
     left: 6px;
     background-color: #665e57;
 }
-.hero-sub .hs-right li{
-    float:left;
+
+.hero-sub .hs-right li {
+    float: left;
 }
-.hero-sub .hs-right li:first-child{
-    margin-left:0;
+
+.hero-sub .hs-right li:first-child {
+    margin-left: 0;
 }
-.hero-sub .hs-right img{
+
+.hero-sub .hs-right img {
     display: block;
     width: 311px;
     height: 170px;
     display: block;
     margin-left: 15px;
+}
+
+/* 右侧快捷导航 */
+
+.tool-bar {
+    width: 27px;
+    height: 261px;
+    position: fixed;
+    background: white;
+    bottom: 40px;
+    left: 50%;
+    margin-left: 613px;
+    text-align: center;
+}
+
+.tool-bar i {
+    color: #665e57;
+}
+
+.tool-bar i:hover {
+    color: #ff6700;
+}
+
+/* 商品展示 */
+
+.page-main {
+    height: 1000px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.page-main .pm-top {
+    width: 1226px;
+    height: 120px;
+    margin: 22px auto;
+    background-image: url("../image/xiaomi11.jpg");
+    background-size: contain;
+}
+
+.page-main .pm-center {
+    height: 58px;
+    line-height: 58px;
+}
+.page-main .pm-center h2{
+    float: left;
+    font-size: 22px;
+    font-weight: 200;
+    color: #333;
+}
+.page-main .pm-center .more-btn{
+    float: right;
+    font-size: 16px;
+    color: #b0b0b0;;
+}
+
+.page-main .more-btn div{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #424242;
+    line-height: 12px;
+}
+.page-main .pm-center .iconfont{
+    color:#fff;
+}
+.page-main .pm-bottom {
+    height: 628px;
+}
+
+.page-main .pm-bottom .pmb-left {
+    width: 234px;
+    height: 628px;
+    background-image: url("../image/xiaomi12.jpg");
+    background-size: contain;
+    float: left;
+}
+
+.page-main .pm-bottom .pmb-right {
+    width: 992px;
+    height: 614px;
+    float: left;
+}
+.page-main .pm-bottom .goods-item{
+    height: 260px;
+    padding: 20px 0;
+    width: 234px;
+    float: left;
+    background-color: #fff;
+}
+.page-main .goods-item img{
+    width: 160px;
+    height: 160px;
+}
+.page-main .goods-item .gi-img{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 18px;
+}
+.page-main .goods-item{
+    margin-bottom: 14px;
+    margin-left: 14px;
+    text-align: center;
+}
+.page-main .goods-item h3{
+    font-size: 14px;
+    font-weight: 400;
+    color:#333;
+    margin:0 10px 2px;
+}
+.page-main .goods-item .gi-info{
+    margin: 0 10px 10px;
+    height: 18px;
+    font-size: 12px;
+    color:#b0b0b0;
+}
+.page-main .gi-price{
+    font-size:14px;
+}
+.page-main .gi-price span{
+    color:#ff6700;
+}
+.page-main .gi-price del{
+    color:#b0b0b0;   
 }
