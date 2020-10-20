@@ -226,6 +226,7 @@
 
 .hero-sub {
     margin-top: 14px;
+    margin-bottom: 26px;
 }
 
 .hero-sub .hs-left {
@@ -345,19 +346,22 @@
     height: 58px;
     line-height: 58px;
 }
-.page-main .pm-center h2{
+
+.page-main .pm-center h2 {
     float: left;
     font-size: 22px;
     font-weight: 200;
     color: #333;
 }
-.page-main .pm-center .more-btn{
+
+.page-main .pm-center .more-btn {
     float: right;
     font-size: 16px;
-    color: #b0b0b0;;
+    color: #b0b0b0;
+    ;
 }
 
-.page-main .more-btn div{
+.page-main .more-btn div {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -366,9 +370,11 @@
     background-color: #424242;
     line-height: 12px;
 }
-.page-main .pm-center .iconfont{
-    color:#fff;
+
+.page-main .pm-center .iconfont {
+    color: #fff;
 }
+
 .page-main .pm-bottom {
     height: 628px;
 }
@@ -386,45 +392,174 @@
     height: 614px;
     float: left;
 }
-.page-main .pm-bottom .goods-item{
+
+.page-main .pm-bottom .goods-item {
     height: 260px;
     padding: 20px 0;
     width: 234px;
     float: left;
     background-color: #fff;
 }
-.page-main .goods-item img{
+
+.page-main .goods-item img {
     width: 160px;
     height: 160px;
 }
-.page-main .goods-item .gi-img{
+
+.page-main .goods-item .gi-img {
     width: 160px;
     height: 160px;
     margin: 0 auto 18px;
 }
-.page-main .goods-item{
+
+.page-main .goods-item {
     margin-bottom: 14px;
     margin-left: 14px;
     text-align: center;
 }
-.page-main .goods-item h3{
+
+.page-main .goods-item h3 {
     font-size: 14px;
     font-weight: 400;
-    color:#333;
-    margin:0 10px 2px;
+    color: #333;
+    margin: 0 10px 2px;
 }
-.page-main .goods-item .gi-info{
+
+.page-main .goods-item .gi-info {
     margin: 0 10px 10px;
     height: 18px;
     font-size: 12px;
-    color:#b0b0b0;
+    color: #b0b0b0;
 }
-.page-main .gi-price{
-    font-size:14px;
+
+.page-main .gi-price {
+    font-size: 14px;
 }
-.page-main .gi-price span{
-    color:#ff6700;
+
+.page-main .gi-price span {
+    color: #ff6700;
 }
-.page-main .gi-price del{
-    color:#b0b0b0;   
+
+.page-main .gi-price del {
+    color: #b0b0b0;
 }
+
+/* 闪购 */
+
+.plain-box .pb-top {
+    height: 58px;
+    line-height: 58px;
+}
+
+.plain-box .pb-top h3 {
+    float: left;
+    font-size: 22px;
+    font-weight: 200;
+    color: #333;
+}
+
+.plain-box .pb-top .right-btn {
+    float: right;
+    width: 70px;
+    height: 25px;
+    border: 1px solid #e0e0e0;
+    margin-top: 16px;
+}
+
+.plain-box .right-btn div {
+    float: left;
+    line-height: 25px;
+    width: 49%;
+    text-align: center;
+}
+
+.plain-box .right-btn div:first-child {
+    border-right: 1px solid #e0e0e0;
+}
+
+.plain-box .right-btn .iconfont {
+    color: #b0b0b0;
+    font-weight: bolder;
+}
+
+.plain-box .right-btn .iconfont:hover {
+    color: #ff6700;
+}
+
+.plain-box .pb-bottom {
+    height: 340px;
+}
+
+.plain-box .pb-bottom .flashsale-countdown {
+    width: 234px;
+    height: 340px;
+    background-color: #f1eded;
+    float: left;
+    border-top:1px solid #e53935;
+    text-align: center;
+    padding-top: 39px;
+    box-sizing: border-box;
+}
+
+.plain-box .pb-bottom .goods-item {
+    width: 978px;
+    height: 340px;
+    margin-left: 14px;
+    float: left;
+}
+.plain-box .flashsale-countdown .timer{
+    font-size: 21px;
+    color:#ef3a3b;
+    padding-top: 15px;
+}
+.plain-box .flashsale-countdown img{
+    margin: 25px auto;
+
+
+}
+.plain-box .flashsale-countdown .desc{
+    color:rgba(0,0,0,0.54);
+    font-size: 15px;
+}
+.plain-box .flashsale-countdown .countdown{
+    width: 168px;
+    margin: 28px auto 0;
+}
+.plain-box .flashsale-countdown span{
+     width: 46px;
+     height: 46px;
+     background: #605751;
+     color: #fff;
+     display: inline-block;
+     font-size: 24px;
+     line-height: 46px;
+}
+.plain-box .flashsale-countdown i{
+    font-style: normal;
+    display: inline-block;
+    width: 7px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 28px;
+}
+.plain-box  .goods-item li{
+    float: left;
+    width: 234px;
+    height: 339px;
+    background: #fff;
+    padding-top: 39px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.plain-box  .goods-item .gi-img{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 22px;
+}
+.plain-box  .goods-item img{
+    width: 160px;
+    height: 160px;
+
+}
+
+
