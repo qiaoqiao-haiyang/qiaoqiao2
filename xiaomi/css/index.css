@@ -11,6 +11,7 @@
     float: left;
     height: 40px;
     line-height: 40px;
+    position: relative;
 }
 
 .nav-list a {
@@ -392,6 +393,15 @@
     height: 614px;
     float: left;
 }
+.page-main  .pmb-right li{
+    transition: all 0.3s ease;
+    margin-top: 0;
+}
+.page-main  .pmb-right li:hover{
+    position: relative;
+    top: -2px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
 
 .page-main .pm-bottom .goods-item {
     height: 260px;
@@ -550,6 +560,8 @@
     padding-top: 39px;
     box-sizing: border-box;
     text-align: center;
+    margin-left: 14px;
+    position: relative;
 }
 .plain-box  .goods-item .gi-img{
     width: 160px;
@@ -559,7 +571,79 @@
 .plain-box  .goods-item img{
     width: 160px;
     height: 160px;
+}
+.plain-box  .goods-item h3{
+    white-space: nowrap;
+    margin: 0 20px 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:#212121;
+    font-weight: 400;
+    font-size: 14px;
+}
+.plain-box  .goods-item .desc{
+    color:#b0b0b0;
+    font-size: 12px;
+    margin: 0 20px 12px;
+    height: 18px;
+}
+.plain-box  .goods-item .price{
+    font-size: 14px;
+    color: #ff6700;
+}
+.plain-box  .price del{
+    color: #b0b0b0;
+}
+.plain-box  .goods-item li:first-child{
+    margin-left: 0;
+    border-top: 1px solid #2196f3;
+}
+.plain-box  .goods-item li:nth-child(2){
+    border-top: 1px solid #e53935;
 
 }
+.plain-box  .goods-item li:nth-child(3){
+    border-top: 1px solid #00c0a5;
 
+}
+.plain-box  .goods-item li:nth-child(4){
+    border-top: 1px solid #ffac13;
+}
+.plain-box .goods-item li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.02);
+    z-index: 2;
+}
+/* 下载app移入效果 */
+.border-arr{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left:-4px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent yellow  transparent;
+}
+.download:hover .border-arr{
+    display: block;
+}
+.download:hover .code-bar{
+    height: 120px;
 
+}
+.code-bar{
+    transform: height .3s ease;
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #aaa;
+}
