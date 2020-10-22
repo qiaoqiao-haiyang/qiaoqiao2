@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // var arr = [1,2,3,4,5];
@@ -33,6 +35,69 @@
         // var b = a[0];
         // a[0] = "a";
         // console.log(b)
+
+
+
+        //Object 对象
+        // var person = {
+        //     name:"小明",
+        //     age:18,
+        //     parent:{
+        //         name:"xxx",
+        //         age:"40"
+        //     }
+        // }
+        // console.log(person.parent.age)
+
+        // var person2 = person;
+        // person.age = 19;
+        // console.log(person2.age)
+
+
+
+        //Function   函数
+        // ():传递参数
+        // {}：函数体
+
+        // function foo(a,b){
+        //     // console.log(a+b)
+        //     return (1+2);
+        // }
+        // var num = foo(1,2);
+        // console.log(num)
+
+
+        // var foo = function (a,b) {
+        //     console.log(a+b);
+        // }
+        // foo(1,2);
+
+        //局部变量：函数内部声明的变量为局部变量
+        //全局变量:函数外部声明的变量为全局变量
+        // function foo(){
+        //     var a = 10;//函数内部定义的变量为局部变量，仅在函数内部生效
+        // }            
+        // foo();
+        // console.log(a);
+
+        // function foo(){
+        //     a = 10;//隐式声明为全局变量
+        // }
+        // foo()
+        // console.log(a)
+
+        // function foo(){
+        //     var a = 10;
+        //     return a;//结束当前函数的功能 
+        //     console.log(a);
+        // }
+        // foo();
+
+        function foo(a,b,c,d){
+            console.log(a,b,c,d);
+        }
+        foo(1,2)
     </script>
 </body>
+
 </html>
