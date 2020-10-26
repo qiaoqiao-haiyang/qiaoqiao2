@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function ranFood() {
+            var ranNum = Math.floor(Math.random() * 10)
+            var _foodName = "";
+            switch (ranNum) {
+                case 0: _foodName = "土豆丝"; break;
+                case 1: _foodName = "锅包肉"; break;
+                case 2: _foodName = "黄焖鸡"; break;
+                case 3: _foodName = "啵啵鱼"; break;
+                case 4: _foodName = "烧烤"; break;
+                case 5: _foodName = "火锅"; break;
+                case 6: _foodName = "串串香"; break;
+                case 7: _foodName = "红烧排骨"; break;
+                case 8: _foodName = "烤冷面"; break;
+                case 9: _foodName = "鸡蛋糕"; break;
+                case 10: _foodName = "包子"; break;
+            }
+            return _foodName;
+        }
+
+        var isGoOn = window.confirm("是否需要点餐");
+        if (isGoOn) {
+            var personNum = window.prompt("几个人用餐？");
+            personNum = parseInt(personNum)//类型转化
+            var personName = [];
+            var resultArr=[];
+            for (var i = 0; i < personNum; i++) {
+                var _thisName = window.prompt("第" + (i + 1) + "个人叫什么？") //私有变量
+                personName.push(_thisName);
+            }
+            for(var j = 0;j<personNum;j++){
+                resultArr.push(personName[j]+"吃"+ranFood())
+            }
+            console.log(resultArr);
+        } else {
+            alert("您已经取消")
+        }
+    </script>
+</body>
+
+</html>

@@ -13,7 +13,9 @@ legend{color:#000;}
 fieldset,img{border:0;}
 button,input,select,textarea{font-size:100%;}
 table{border-collapse:collapse;border-spacing:0;}
-
+html,body{
+  width:100%;
+}
 .wrapper{
   width: 1226px;
   margin:0 auto;

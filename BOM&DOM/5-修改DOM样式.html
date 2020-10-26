@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">hello world</div>
+    <div class="box2" style="color:blue">你好</div>
+    <script>
+        var oBox = document.getElementsByClassName("box")[0];//类数组要加东西精确到元素
+        var oBox2 = document.getElementsByClassName("box2")[0]
+        // console.log(oBox);
+        // oBox.innerHTML = "nihao你好"
+
+        oBox.style.color = "red";
+        // oBox.style.font-size = "30px"
+        oBox.style.fontSize = "30px"
+
+        console.log(oBox2.style.color);//可读可写
+
+    </script>
+</body>
+
+</html>
