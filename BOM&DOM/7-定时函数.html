@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log("1");
+        // setTimeout(function(){   //claerTimeout
+        //     console.log("hello");
+        // },1000)
+        // console.log("2");
+
+        // setInterval(function(){//循环定时函数，每隔一秒执行一个函数
+        //     console.log("hello");
+        // },1000)
+
+
+        var i = 10;
+        var timer = setInterval(function(){
+            console.log(i);
+            if(i == 0 ){
+                clearInterval(timer)
+            }
+            i--;
+        },100)
+        // var timer2 = setInterval(function(){
+        //     console.log(i);
+        //     i--;
+        // },1000)
+        // console.log(timer);
+        // console.log(timer2);
+    </script>
+</body>
+</html>
