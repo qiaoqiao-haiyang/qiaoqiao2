@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            width: 100px;
+            height: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <img id = "test-img"src="" alt="">
+    <button id = "btn">按钮</button>
+    <script>
+        var oBtn = document.getElementById("btn");
+        var oImg = document.getElementById("test-img");
+        oBtn.onclick = function(){
+            // var _src = oImg.getAttribute("src");
+            // console.log(_src);
+            oImg.setAttribute("src","../image/img_sgs01.png")
+            oImg.setAttribute("class","active")
+        }
+    </script>
+</body>
+</html>
