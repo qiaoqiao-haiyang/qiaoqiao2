@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class = "btn">按钮</button>
+    <button class = "btn2">移除事件</button>
+    <script>
+        var oBtn = document.getElementsByClassName("btn")[0]
+        var oBtn2 = document.getElementsByClassName("btn2")[0]
+        function foo(){
+            console.log("btnclick");
+        }
+        oBtn.addEventListener("click",foo)
+
+        oBtn2.addEventListener("click",function(){
+            console.log("remove");
+        oBtn.removeEventListener("click",foo)
+    })
+
+
+
+
+
+
+
+
+
+
+        // oBtn.onclick = function(){
+        //     console.log("123");
+        // }
+        // oBtn2.onclick = function(){
+        //     oBtn.onclick = function(){}
+        // }
+    </script>
+</body>
+</html>
