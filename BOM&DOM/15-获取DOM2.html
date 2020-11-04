@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div id="div1"></div>
+    <script>
+        var oBox = document.getElementsByClassName("box")[0]
+        var oBox2 = document.querySelector(".box")
+        var oDiv1 = document.querySelector("#div1")
+        var aBox = document.querySelectorAll(".box")
+
+        console.log(oBox,oBox2,oDiv1,aBox)
+    </script>
+</body>
+</html>

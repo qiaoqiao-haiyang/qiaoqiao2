@@ -116,13 +116,20 @@
     <script>
         var numBtn = document.getElementsByClassName("num-btn");
         var imgBox = document.getElementById("img-box");
-        var arrBtn = document.getElementsByClassName("arr-btn")
+        var arrBtn = document.getElementsByClassName("arr-btn");
+        var oBox = document.getElementsByClassName("box")[0]
         var timer;
+        var runTimer;
         var nowIndex = 0;
         var nextIndex = 0;
         var driection = 0;
+        var isRun = true;
 
         function changeImg(index) {
+            if(!isRun){//如果isRun为false那么跳出函数
+                return false;///如果函数中遇到如return 函数结束运行 
+            }
+            isRun = false
             nextIndex = index;
             //判断方向
             if (nextIndex == 1 && nowIndex == 5) {//判断右边界
@@ -154,6 +161,7 @@
             timer = setInterval(function () {
                 if (imgBox.offsetLeft == -490 * nextIndex) {
                     clearInterval(timer)
+                    isRun = true;
                     if (nextIndex == 5) {
                         nowIndex = 0;
                         imgBox.style.left = 0
@@ -164,7 +172,7 @@
                 } else {
                     imgBox.style.left = imgBox.offsetLeft + driection + "px"
                 }
-            }, 16)
+            }, 8)
         }
         //数字按钮事件
         for (var i = 0; i < numBtn.length; i++) {
@@ -210,6 +218,23 @@
         arrBtn[0].onclick = function () {
             changeImg(nowIndex - 1)
         }
+
+        //鼠标移入停止
+        oBox.onmouseover = function(){
+            clearInterval(runTimer)
+        }
+        //鼠标移出继续
+        oBox.onmouseout = function(){
+            run();
+        }
+        //定时滚动
+        function run(){
+            runTimer = setInterval(function(){
+                changeImg(nowIndex+1)
+            },2000)
+        }
+        run();
+        
     </script>
 </body>
 
