@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            max-width:960px;
+            margin: 0 auto;
+        }
+        header,nav,footer{
+            height: 100px;
+            background-color: gray;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+            color:black;
+            margin-bottom: 10px;
+        }
+        .img img{
+            width: 100%;
+        }
+        .img{
+            background-image: url("./img/01_s.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 56%;
+        }
+        article{
+            float: left;
+            width: 60%;
+            height: 300px;
+            background-color: blue;
+            margin-bottom: 10px;
+        }
+        aside{
+            float: right;
+            width: 35%;
+            height: 300px;
+            background-color: red;
+        }
+        article,aside{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .content{
+            margin-bottom: 10px;
+        }
+        @media(max-width:600px){
+            article,aside{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>页头</header>
+        <nav>导航</nav>
+        <div class = "img">
+            <!-- <img src="./img/01_s.jpg" alt=""> -->
+        </div>
+        <div class ="content clearfix">
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem erat, egestas quis luctus ut, rhoncus vitae risus. Integer venenatis libero sit amet sapien dictum, quis bibendum mi volutpat. Cras pretium quam quis magna facilisis, eget feugiat nisi lacinia.</p>
+            </article>
+            <aside>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem erat, egestas quis luctus ut, rhoncus vitae risus. Integer venenatis libero sit amet sapien dictum, quis bibendum mi volutpat. Cras pretium quam quis magna facilisis, eget feugiat nisi lacinia.</p>
+            </aside>
+        </div>
+        <footer>页角</footer>
+    </div>
+</body>
+</html>
