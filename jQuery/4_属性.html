@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            background:rgb(152,251,152);
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="a" value="123">
+    <button id = "btn">click</button>
+    <input type="checkbox" checked="true">
+    <div id="div1" class="a">11111</div>
+    <ul>
+        <li style="background: rgb(124, 128, 81);">1</li>
+        <li style="background: goldenrod;">2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        // $("#btn").on('click',function(){
+            // $("#div1").attr("class","b")
+            // console.log( $("#div1").attr('class'));
+            // $("#div1").removeAttr("class")
+            // $("input").attr("checked", !$("input").attr("checked"))
+            // $("input").prop("checked", !$("input").attr("checked"))
+        // })
+    //    console.log(document.getElementById("a").value)
+    //    console.log($("#a").val());
+    //    console.log($("#a").attr("value"));
+
+    // $("#div1").css("border","1px solid #000")
+    $("#div1").css({
+        width:200,
+        height:200,
+        background:'red',
+        border:'1px solid #000'
+    })
+    // console.log($('#div1').css("background"))
+    console.log($('li').css("background-color"))
+
+
+    </script>
+</body>
+</html>
