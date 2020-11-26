@@ -51,22 +51,48 @@
     // console.log(NaN===NaN);//T
     // console.log(Object.is(NaN,NaN));//F
 
-    let obj ={
-      name:"小a",
+    // let obj ={
+    //   name:"小a",
+    // }
+    // let obj2 = {
+    //   age:20
+    // }
+    // let obj3 ={
+    //   school:"lg",
+    //   student:{
+    //     name:"小b"
+    //   }
+    // }
+    // Object.assign(obj,obj2,obj3)
+
+    // // obj3.school="hd"
+    // obj3.student.name ="小c";
+    // console.log(obj);
+
+    // let obj = {
+    //   name:"小a"
+    // }
+
+    // console.log("name" in obj);
+    // console.log(obj.hasOwnProperty("name"));
+
+    
+    function Person(){
+      this.name = "小b";
+      this.school = "hd"
+
     }
-    let obj2 = {
-      age:20
-    }
-    let obj3 ={
-      school:"lg",
-      student:{
-        name:"小b"
-      }
-    }
-    Object.assign(obj,obj2,obj3)
-    // obj3.school="hd"
-    obj3.student.name ="小c"
-    console.log(obj);
+    Person.prototype.school = "lg"
+    let student = new Person();
+
+    // console.log("name" in student);
+    // console.log(student.hasOwnProperty("name"));
+
+    console.log(student.school);
+
+    // console.log("school" in student);
+    // console.log(student.hasOwnproperty("school"));
+
 
   </script>
 </body>
