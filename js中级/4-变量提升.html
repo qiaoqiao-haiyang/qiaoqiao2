@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //变量提升 ※提升到当前作用域的最顶端
+        // var  a 
+        // var a =10;
+        // console.log(a);
+
+        // function foo(){
+        //     console.log(a);
+        //     var a =10
+        // }
+        // foo()
+        // console.log(a);
+
+        // var  a =10;
+        // var a = function () {
+        //     console.log("1");
+        // }
+        // a();
+        // console.log(a);
+
+        //将整个函数提升到最顶端
+        // foo()
+        // function foo(){
+        //     console.log("1");
+        // }
+
+        console.log(a);
+        var a  = 10;
+        var a = function(){
+            console.log("1");
+        }
+        a()
+
+
+
+    </script>
+</body>
+</html>
