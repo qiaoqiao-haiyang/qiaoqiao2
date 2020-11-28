@@ -73,27 +73,27 @@
         // })
 
 
-        let  promise1 = new Promise(function(resolve,reject){
-            $.get("./data/a.json",function(res){
-                resolve(res);
-            })
-        }) 
-        let  promise2 = new Promise(function(resolve,reject){
-            $.get("./data/b.json",function(res){
-                // resolve(res);
-                reject();
-            })
-        }) 
-        let  promise3 = new Promise(function(resolve,reject){
-            $.get("./data/c.json",function(res){
-                resolve(res);
-            })
-        }) 
-        Promise.all([promise1,promise2,promise3]).then(function(res){
-            console.log("成功");
-        }).catch(function(){
-            console.log("失败");
-        })
+        // let  promise1 = new Promise(function(resolve,reject){
+        //     $.get("./data/a.json",function(res){
+        //         resolve(res);
+        //     })
+        // }) 
+        // let  promise2 = new Promise(function(resolve,reject){
+        //     $.get("./data/b.json",function(res){
+        //         // resolve(res);
+        //         reject();
+        //     })
+        // }) 
+        // let  promise3 = new Promise(function(resolve,reject){
+        //     $.get("./data/c.json",function(res){
+        //         resolve(res);
+        //     })
+        // }) 
+        // Promise.all([promise1,promise2,promise3]).then(function(res){
+        //     console.log("成功");
+        // }).catch(function(){
+        //     console.log("失败");
+        // })
     </script>
 </body>
 
