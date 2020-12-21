@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/vue.js"></script>
+</head>
+<body>
+    <div id = "app">
+       <div id="div1" v-if="isIf">div1</div>
+       <!-- 把整个元素抽出去，整个元素消失   -->
+       <div id="div2" v-show = "isShow">div2</div>
+       <!-- 当前元素的css   -->
+    </div>
+    <!-- 重排 重绘 -->
+    <!-- 
+        重排：会导致页面中所有元素全部重新渲染一边
+        重绘：开销小，单个元素修改--性能好
+     -->
+    <script>
+        new Vue({
+            el:"#app",
+           data:{
+               isIf:false,
+               isShow:false
+           }
+        })
+    </script>
+</body>
+</html>
