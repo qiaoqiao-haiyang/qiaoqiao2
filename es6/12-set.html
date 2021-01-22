@@ -22,6 +22,11 @@
         //     console.log(val);
         // }
 
+        //在API中WeakSet与Set的两个区别:
+        //没有遍历操作的API
+        //没有size属性，WakeSet成员只能是引用数据类型，而不能是其它类型的值
+        //WeakSet里面的引用只要在外面消失，里面就会自动消失
+
 
         let ws = new WeakSet();
         ws.add({name:"小a"})
@@ -32,7 +37,14 @@
         // let setArr = new Set(arr)
         // console.log(Array.from(setArr));
         // // console.log(setArr);
+        
+        let set = new Set([1,4,9]);
+        set.forEach((value,key) => console.log(key + " " +value))
 
+
+        {let a = [[1,2],[3,4]];
+        let ws = new WeakSet(a)
+        console.log(ws);}
     </script>
 </body>
 </html>

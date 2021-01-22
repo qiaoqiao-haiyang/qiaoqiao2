@@ -58,8 +58,8 @@
         div1.addEventListener("click",function(){
             console.log("div1");
         },false)
-        div2.addEventListener("click",function(event){
-            event.stopPropagation()//阻止冒泡
+        div2.addEventListener("click",function(e){
+            e.stopPropagation()//阻止冒泡
             console.log("div2");
         },false)
         div3.addEventListener("click",function(){

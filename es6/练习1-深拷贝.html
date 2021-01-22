@@ -165,14 +165,15 @@
                     if(Array.isArray(target)){
                         result = []
                         for(let val of target){
-                            result.push(deepClone(val))
+                            // console.log(val);
+                            result.push(val)
                         }
                     }
                     else{
                         result = {}
                         for(let item in target){
-                            result[item] = deepClone(target[item])
-                        }
+                        result[item] = target[item]
+    }
                     }
                 }else{
                     result = target
@@ -180,9 +181,7 @@
                 return result
             }
 
-
-
-
+            
 
 
         let obj = {
