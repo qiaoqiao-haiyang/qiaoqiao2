@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/index.css */ \"./src/css/index.css\");\n\nconsole.log(\"hello world\");\n\nfunction foo() {\n  console.log(\"你好vip2\");\n}\n\nfoo();\nvar arr = [1, 2, 3, 4, 5, 6];\nconsole.log(arr);\n\n//# sourceURL=webpack://mywebpack5/./src/index.js?");
+
+/***/ }),
+
 /***/ "./src/css/index.css":
 /*!***************************!*\
   !*** ./src/css/index.css ***!
@@ -17,16 +27,6 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://mywebpack5/./src/css/index.css?");
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/index.css */ \"./src/css/index.css\");\n\r\nconsole.log(\"hello world\");\r\nfunction foo(){\r\n    console.log(\"你好\");\r\n}\r\nfoo();\r\nlet arr = [1,2,3,4]\r\nconsole.log(arr);\n\n//# sourceURL=webpack://mywebpack5/./src/index.js?");
 
 /***/ })
 

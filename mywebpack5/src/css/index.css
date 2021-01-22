@@ -1,3 +1,9 @@
 .div1{
-    color:red;
+    color: red;
+    height: 200px;
+    width: 200px;
+    background-image: url("../image/slider3.jpg");
+}
+::placeholder{
+    color:blue
 }

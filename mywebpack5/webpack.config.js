@@ -10,13 +10,32 @@ module.exports = {
     // 出口文件配置项
     output:{
         path:path.resolve(__dirname,"dist"),
-        filename:'[name].js'
+        filename:'[name].js',
+        publicPath:'http://127.0.0.1:8081/'
     },
     module:{
         rules:[
             {
                 test:/\.css$/,
-                use:[MiniCssExtractPlugin.loader,'css-loader']
+                use:[MiniCssExtractPlugin.loader,'css-loader','postcss-loader']
+            },{
+                test:/\.(png|jpg|gif)$/,
+                use:[{
+                    loader:'url-loader',
+                    options:{
+                        outputPath:'image/',
+                        limit:500
+                    }
+                }]
+            },{
+                test:/\.js$/,
+                use:[{
+                    loader:'babel-loader',
+                    options:{
+                        presets:['@babel/preset-env']
+                    }
+                }],
+                exclude:'/node_modules/'
             }
         ]
     },
