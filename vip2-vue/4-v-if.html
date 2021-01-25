@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+
+            <!-- 元素频繁插入或移除用v-show -->
+            <li>衣服：
+                <span v-if="goods1!=0">{{goods1}}</span>
+                <span v-else>售空</span>
+            </li>
+            <li>帽子:  {{goods2}} </li>
+            <li>裤子:  {{goods3}} </li>
+            <li>脆锅巴: {{goods4}}</li>
+        </ul>
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            //view层显示moudle层数据需要写到data里
+            data:{
+                goods1:10,
+                goods2:20,
+                goods3:30,
+                goods4:40,
+            }
+        })
+    </script>
+</body>
+</html>
