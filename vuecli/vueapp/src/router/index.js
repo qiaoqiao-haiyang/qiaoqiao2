@@ -23,6 +23,16 @@ const routes = [
     name: 'PageOne',
     component: () => import('../views/Page1.vue')//懒加载
   },
+  {
+    path: '/pagetwo',
+    name: 'PageTwo',
+    component: () => import('../views/Page2.vue')//懒加载
+  },
+  {
+    path:'/pagethree/:username',
+    name:'PageThree',
+    component:() =>import('../views/Page3.vue')
+  }
 ]
 
 const router = new VueRouter({

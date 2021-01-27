@@ -3,7 +3,13 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>  |
-      <router-link to="/pageOne">Page1</router-link>
+      <!-- <router-link to="/pageone">Page1</router-link>  | -->
+      <router-link :to="{name:'PageOne',params:{username:'小明'}}">Page1</router-link>  |
+      <router-link :to="{name:'PageTwo',query:{username:'小刚'}}">Page2</router-link>  |
+      <router-link to="/pageThree/小黑">Page3</router-link>  |
+
+
+
     </div>
     <router-view/>
   </div>

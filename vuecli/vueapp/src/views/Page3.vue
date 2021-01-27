@@ -1,0 +1,13 @@
+<template>
+    <div>
+        <h1>我是页面三</h1>
+        <h1>用户名：{{$route.params.username}} </h1>
+    </div>
+</template>
+<script>
+export default {
+    created(){
+
+    },
+}
+</script>
