@@ -13,25 +13,48 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import('../views/About.vue'),
+    children:[
+      {
+        path:"childone",
+        name:"Childone",
+        component:()=>import("../views/Child1.vue")
+      },{
+        path:"childtwo",
+        name:"Childtwo",
+        component:()=>import("../views/Child2.vue")
+      }
+
+    ]
   },
   {
     path: '/pageone',
     name: 'PageOne',
-    component: () => import('../views/Page1.vue')//懒加载
+    component: () => import('../views/Page1.vue'),//懒加载
+    beforeEnter: (to, from, next) => {
+      // console.log(to,from,next);
+      next()
+    },
+    
   },
   {
     path: '/pagetwo',
     name: 'PageTwo',
+    alias:'/detail',
     component: () => import('../views/Page2.vue')//懒加载
   },
   {
     path:'/pagethree/:username',
     name:'PageThree',
     component:() =>import('../views/Page3.vue')
+  },
+  {
+    path:'/redirect/:username',
+    redirect:'/pagethree/:username',
+  },
+  {
+    path:'*',
+    component:()=>import('../views/Error.vue')
   }
 ]
 

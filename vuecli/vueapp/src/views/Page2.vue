@@ -6,8 +6,8 @@
 </template>
 <script>
 export default {
-    created(){
-        console.log(this.$route.query.username);
-    }
+    created() {
+        console.log(this.$route.query.username)
+    },
 }
 </script>
