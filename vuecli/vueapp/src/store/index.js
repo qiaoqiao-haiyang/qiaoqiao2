@@ -6,7 +6,7 @@ Vue.use(Vuex)
 
 const moduleA={
   state:{
-    ma:123
+    ma:10
   },
   mutations:{
     madd(state){
@@ -20,9 +20,9 @@ export default new Vuex.Store({
     str:"hello",
   },
   mutations: {//同步修改
-    add(state,n){
+    add(state,payload){
       // console.log(payload.a,payload.b);
-      state.count+=n
+      state.count+=payload.b
     },
     reduce(state){
       state.count-=1

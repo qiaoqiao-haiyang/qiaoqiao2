@@ -1,13 +1,13 @@
 <template>
     <div>
-        <h1> {{$store.state.goods.ma}} </h1>
+        <h1> ma:{{$store.state.goods.ma}} </h1>
         <h1>这是页面四</h1>
         <!-- <h1>store下的:{{$store.state.count}}</h1> -->
         <h1> page4下的{{count}} </h1>
         <h1> str:{{str}} </h1>
         <h1> {{sumi}} </h1>
         <h1> sum:{{sum}} </h1>
-        <button @click="add(5)">add</button>
+        <button @click="addM({b:3})">add</button>
         <button @click="reduceAction">reduce</button>
 
     </div>
@@ -21,11 +21,12 @@ export default {
         }
     },
     methods: {
-        ...mapMutations(['add']),
-        testHandli(){
+        ...mapMutations({addM:'add'}),
+        testHandli(){},
+        ...mapActions(['reduceAction']),
+        add(){
 
-        },
-        ...mapActions(['reduceAction'])
+        }
     },
     created() {
 
