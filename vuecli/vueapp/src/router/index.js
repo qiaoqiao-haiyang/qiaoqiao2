@@ -24,7 +24,6 @@ const routes = [
         name:"Childtwo",
         component:()=>import("../views/Child2.vue")
       }
-
     ]
   },
   {
@@ -35,31 +34,26 @@ const routes = [
       // console.log(to,from,next);
       next()
     },
-    
-  },
-  {
+  },{
     path: '/pagetwo',
     name: 'PageTwo',
     alias:'/detail',
     component: () => import('../views/Page2.vue')//懒加载
-  },
-  {
+  },{
     path:'/pagethree/:username',
     name:'PageThree',
     component:() =>import('../views/Page3.vue')
-  },
-  {
+  },{
     path:'/redirect/:username',
     redirect:'/pagethree/:username',
-  },
-  {
+  },{
     path:'*',
     component:()=>import('../views/Error.vue')
   }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })
