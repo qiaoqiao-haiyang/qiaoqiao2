@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h1> {{$store.state.goods.ma}} </h1>
         <h1>getters: {{$store.getters.sum}} </h1>
         <h1>count:{{$store.state.count}}</h1>
         <button @click="addHandle">add</button>
